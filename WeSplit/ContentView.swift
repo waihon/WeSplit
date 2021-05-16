@@ -13,7 +13,7 @@ struct ContentView: View {
   var body: some View {
     Form {
       TextField("Enter your name", text: $name)
-      Text("Hello, world!")
+      Text("Your name is \(name)")
     }
   }
 }
