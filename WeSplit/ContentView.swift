@@ -11,7 +11,15 @@ struct ContentView: View {
   var body: some View {
     Form {
       Text("Hello, world!")
-        .padding()
+      Text("Hello, world!")
+      Text("Hello, world!")
+      Text("Hello, world!")
+      Text("Hello, world!")
+      Text("Hello, world!")
+      Text("Hello, world!")
+      Text("Hello, world!")
+      Text("Hello, world!")
+      Text("Hello, world!")
     }
   }
 }
