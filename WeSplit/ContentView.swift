@@ -33,6 +33,7 @@ struct ContentView: View {
               Text("\(tipPercentages[$0])%")
             }
           }
+          .pickerStyle(SegmentedPickerStyle())
         }
         
         Section {
