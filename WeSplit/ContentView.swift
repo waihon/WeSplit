@@ -49,7 +49,7 @@ struct ContentView: View {
         }
         
         Section {
-          Text("$\(checkAmount)")
+          Text("$\(totalPerPerson)")
         }
       }
       .navigationBarTitle("WeSplit")
