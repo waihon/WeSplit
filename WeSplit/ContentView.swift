@@ -13,16 +13,20 @@ struct ContentView: View {
   @State private var tipPercentage = 2
   let tipPercentages = [10, 15, 20, 25, 0]
   
-  var totalPerPerson: Double {
-    let peopleCount = Double(numberOfPeople + 2)
+  var peopleCount: Double {
+    return Double(numberOfPeople + 2)
+  }
+  
+  var totalAmount: Double {
     let tipSelection = Double(tipPercentages[tipPercentage])
     let orderAmount = Double(checkAmount) ?? 0
     
     let tipValue = orderAmount * tipSelection / 100
-    let grandTotal = orderAmount + tipValue
-    let amountPerPerson = grandTotal / peopleCount
-    
-    return amountPerPerson
+    return orderAmount + tipValue
+  }
+  
+  var totalPerPerson: Double {
+    return totalAmount / peopleCount
   }
   
   var body: some View {
